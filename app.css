@@ -1,0 +1,83 @@
+@media (min-width: 800px){
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #60a9ff;
+        min-height: 100vh;
+        font-family: 'Open sans', sansserif;
+    }
+    .panel-pricing-table{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: absolute;
+        justify-content: space-evenly;
+        height: 72%;
+        width: 65%;
+        border-radius: 10px;
+        padding: 15px 25px;
+    }
+    .pricing-plan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        max-width: 320px;
+        padding: 45px 45px;
+        border-right: 1px solid rgba(136,136,136,0.2);
+    }
+    div img{
+        max-width: 220px;
+    }
+    h2{
+        font-size: 16px;
+        color: gray;
+        text-transform: uppercase;
+    }
+    li{
+        font-size: 16px;
+        width: 250px;
+        padding: 15px 0px;
+        margin-left: -40px;
+        text-transform: uppercase;
+        text-align: center;
+        list-style: none;
+        color: rgb(1, 111, 249);
+        border-top: 1px solid rgba(1, 111, 249, 0.1);
+        border-bottom: 1px solid rgba(1, 111, 249, 0.1);
+    }
+    .pricing-price{
+        
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 32px;
+        color: rgb(1, 111, 249);
+    }
+    .pricing-button{
+        padding: 15px 35px;
+        text-decoration: none;
+        border: 1px solid rgb(1, 111, 249);
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: rgb(1, 111, 249);
+        margin: 25px 0px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .is-featured{
+        color: white;
+        background-color: rgb(1, 111, 249);
+    }
+    a:hover{
+        background-color:rgb(1, 111, 249);
+        color: white;
+    }
+    .is-featured:hover{
+        background-color: white;
+        color: rgb(1, 111, 249);
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
